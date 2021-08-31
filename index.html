@@ -10,12 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
 </head>
+
 <body>
 <div class="header">
     <div class="header-item" id="gmail"><a href="#">Gmail</a></div>
     <div class="header-item" id="images"><a href="#">Images</a></div>
     <div class="header-item" id="apps-logo-container"><a href="#"><img id="apps" src="/media/round_apps_black_24dp.png" alt="Google Apps Logo"></a></div>
-    <div class="header-item" id="user-picture-container"><img id="user-picture" src="/media/unnamed.jpg" alt=""></a></div><a href="">
+    <div class="header-item" id="user-picture-container"><img id="user-picture" src="/media/unnamed.jpg" alt=""></div>
 </div>
 
 <div class="logo">
@@ -23,21 +24,21 @@
 </div>
 
 <div class="input-container">
-    <input type="text">
-</div>
-
-<div class="buttons">
-    <button id="search">Google Search</button>
-    <button id="lucky">I'm Feeling Lucky</button>
+    <form>
+        <input type="text">
+        <div class="buttons">
+            <button id="search">Google Search</button>
+            <button id="lucky">I'm Feeling Lucky</button>
+        </div>
+    </form>    
 </div>
 
 <div class="languages">
-    <p>Google offered in:</p>
-    <ul>
-        <li><a href="#">Turkce</a></li>
-        <li><a href="#">עברית</a></li>
-        <li><a href="#">العربية</a></li>
-    </ul>
+    <p>Google offered in:
+            <a class="lang-btn" href="#">Turkce</a>
+            <a class="lang-btn" href="#">עברית</a>
+            <a class="lang-btn" href="#">العربية</a>
+    </p>
 </div>
 
 <div class="footer">
@@ -45,16 +46,16 @@
     <div class="links">
 
         <div class="left-footer">
-            <a href="#">About</a>
-            <a href="#">Advertising</a>
-            <a href="#">Business</a>
-            <a href="#">How Search Works</a>
+            <a class="ftr-lnk" href="#">About</a>
+            <a class="ftr-lnk" href="#">Advertising</a>
+            <a class="ftr-lnk" href="#">Business</a>
+            <a class="ftr-lnk" href="#">How Search Works</a>
         </div>
-
+            
         <div class="right-footer">
-            <a href="#">Privacy</a>
-            <a href="#">Terms</a>
-            <a href="#">Settings</a>
+            <a class="ftr-lnk" href="#">Privacy</a>
+            <a class="ftr-lnk" href="#">Terms</a>
+            <a class="ftr-lnk" href="#">Settings</a>
         </div>
     
     </div>
