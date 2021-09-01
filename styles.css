@@ -36,6 +36,9 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    padding: 0;
+    margin: 0;
 }
 
 input {
@@ -47,10 +50,16 @@ input {
     border-radius: 2em;
     border-width: thin;
     box-shadow: none;
-    text-indent: 10%;
+    text-indent: 8%;
     outline: none;
     width: 50vh;
     height: 4vh;
+}
+
+input:hover {
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
 }
 
 .buttons {
@@ -165,7 +174,7 @@ ul {
     display: flex;
     justify-content: left;
     gap: 1.5em;
-    width: 40%;
+    width: 60%;
 }
 
 .right-footer {
@@ -177,4 +186,40 @@ ul {
 
 .ftr-lnk {
     color: rgba(0,0,0,.54)
+}
+
+#no-wrap {
+    flex-shrink: 0;
+}
+
+@media (max-width: 1000px) {
+    .links {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 700px) {
+
+    input {
+        width: 40vh;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+    }
+
+    .left-footer {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right-footer {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
 }
